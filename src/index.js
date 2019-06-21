@@ -5,10 +5,11 @@ import Results from './components/results'
 import Details from './components/details'
 //Connect redux with react
 import {Provider} from 'react-redux'
+import store from './redux/store'
 
 
 const Root = (
-    <Provider>
+    <Provider store ={store}>
         <BrowserRouter>
             <Switch>
                 <Route path="/results" component={Results} />
